@@ -1,5 +1,5 @@
 let request = require("request");
-request("https://www.ugaoo.com/live-plants.html", cb);
+request("https://www.worldometers.info/coronavirus/", cb);
 
 function cb(err , res , body){
     console.log("error" , err);
