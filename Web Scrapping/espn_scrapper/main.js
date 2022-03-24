@@ -1,4 +1,4 @@
-let url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595://www.expncricinfo.com/series/ipl-2020-21-1210595";
+let url = "https://www.espncricinfo.com/series/ipl-2020-21-1210595";
 const request = require("request");
 const cheerio = require("cheerio");
 
@@ -6,7 +6,7 @@ request(url, cb);
 
 function cb(err , res , body){
     if(err){
-        console.log("error", err);
+        console.error("error", err);
     }
     else{
         handleHTML(body);
